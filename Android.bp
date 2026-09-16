@@ -3565,42 +3565,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.secure_element@1.0-impl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.secure_element@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libhardware",
-                "libbase",
-                "libcutils",
-                "libcrypto",
-                "vendor.xiaomi.hardware.mtdservice@1.0",
-                "android.hardware.secure_element@1.0",
-                "libGPTEE_vendor",
-                "vendor.qti.esepowermanager@1.0",
-                "vendor.qti.esepowermanager@1.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qualcomm.qti.dpm.api@1.0_vendor",
     stem: "com.qualcomm.qti.dpm.api@1.0",
     owner: "xiaomi",
@@ -3964,38 +3928,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.esepowermanager@1.1-impl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "vendor.qti.esepowermanager@1.0",
-                "vendor.qti.esepowermanager@1.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.alarm@1.0-impl",
     owner: "xiaomi",
     strip: {
@@ -4256,36 +4188,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "jcos_nq_client",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/jcos_nq_client.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libchrome",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -8431,37 +8333,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "ls_nq_client",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/ls_nq_client.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libchrome",
-                "libhidlbase",
-                "se_nq_extn_client",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libwvdrmengine",
     owner: "xiaomi",
     strip: {
@@ -8558,36 +8429,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "se_nq_extn_client",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/se_nq_extn_client.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libchrome",
-                "libhidlbase",
                 "libc++",
                 "libc",
                 "libm",
@@ -9132,63 +8973,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.qti.data.slm@1.0.so",
             ],
             shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.esepowermanager@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.esepowermanager@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.esepowermanager@1.1",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.esepowermanager@1.1.so",
-            ],
-            shared_libs: [
-                "vendor.qti.esepowermanager@1.0",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -11276,7 +11060,7 @@ cc_prebuilt_library_shared {
 }
 
 prebuilt_rfsa {
-    name: "capi_v2_aptX_CLHDADV_Encoder",
+    name: "vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDADV_Encoder_so",
     filename: "capi_v2_aptX_CLHDADV_Encoder.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so",
@@ -11285,7 +11069,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "capi_v2_aptX_CLHDAD_Speech_Decoder",
+    name: "vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDAD_Speech_Decoder_so",
     filename: "capi_v2_aptX_CLHDAD_Speech_Decoder.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so",
@@ -13280,40 +13064,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "vendor.qti.esepowermanager@1.1-service",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.1-service",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libhardware_legacy",
-                "libhardware",
-                "libQSEEComAPI",
-                "liblog",
-                "libhidlbase",
-                "vendor.qti.esepowermanager@1.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "vendor.qti.hardware.alarm@1.0-service",
     owner: "xiaomi",
     target: {
@@ -13563,46 +13313,6 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.qti.secure_element@1.2-service",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.qti.secure_element@1.2-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libhardware",
-                "se_nq_extn_client",
-                "ls_nq_client",
-                "jcos_nq_client",
-                "libhidlbase",
-                "android.hardware.secure_element@1.0",
-                "android.hardware.secure_element@1.1",
-                "android.hardware.secure_element@1.2",
-                "vendor.qti.esepowermanager@1.0",
-                "vendor.qti.esepowermanager@1.1",
-                "android.hardware.secure_element@1.0-impl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
     strip: {
         none: true,
     },
@@ -14857,6 +14567,42 @@ install_symlink {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.secure_element@1.0-impl",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.secure_element@1.0-impl.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libutils",
+                "liblog",
+                "libhardware",
+                "libbase",
+                "libcutils",
+                "libcrypto",
+                "vendor.xiaomi.hardware.mtdservice@1.0",
+                "android.hardware.secure_element@1.0",
+                "libGPTEE_vendor",
+                "vendor.qti.esepowermanager@1.0",
+                "vendor.qti.esepowermanager@1.1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "android.hardware.gnss@2.1-impl-qti",
     owner: "xiaomi",
     strip: {
@@ -14887,6 +14633,38 @@ cc_prebuilt_library_shared {
                 "libloc_core",
                 "libgps.utils",
                 "liblocation_api",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.esepowermanager@1.1-impl",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "vendor.qti.esepowermanager@1.0",
+                "vendor.qti.esepowermanager@1.1",
                 "libc++",
                 "libc",
                 "libm",
@@ -14943,6 +14721,36 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "jcos_nq_client",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/jcos_nq_client.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libchrome",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -15286,6 +15094,124 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "ls_nq_client",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/ls_nq_client.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libchrome",
+                "libhidlbase",
+                "se_nq_extn_client",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "se_nq_extn_client",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/se_nq_extn_client.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libchrome",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.esepowermanager@1.0",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.esepowermanager@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.esepowermanager@1.1",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.esepowermanager@1.1.so",
+            ],
+            shared_libs: [
+                "vendor.qti.esepowermanager@1.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.gnss@4.0-service",
     owner: "xiaomi",
     strip: {
@@ -15384,6 +15310,80 @@ cc_prebuilt_binary {
                 "android.hardware.gnss@1.1",
                 "android.hardware.gnss@2.0",
                 "android.hardware.gnss@2.1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.qti.esepowermanager@1.1-service",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.1-service",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libhardware_legacy",
+                "libhardware",
+                "libQSEEComAPI",
+                "liblog",
+                "libhidlbase",
+                "vendor.qti.esepowermanager@1.1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.qti.secure_element@1.2-service",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.qti.secure_element@1.2-service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libhardware",
+                "se_nq_extn_client",
+                "ls_nq_client",
+                "jcos_nq_client",
+                "libhidlbase",
+                "android.hardware.secure_element@1.0",
+                "android.hardware.secure_element@1.1",
+                "android.hardware.secure_element@1.2",
+                "vendor.qti.esepowermanager@1.0",
+                "vendor.qti.esepowermanager@1.1",
+                "android.hardware.secure_element@1.0-impl",
                 "libc++",
                 "libc",
                 "libm",
