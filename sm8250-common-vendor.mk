@@ -281,6 +281,9 @@ PRODUCT_PACKAGES += \
     libwfdutils_proprietary \
     libasphere \
     libhwdap \
+    libqcbassboost \
+    libqcreverb \
+    libqcvirt \
     libshoebox \
     libswgamedap \
     libswvqe \
