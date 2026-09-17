@@ -3447,7 +3447,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "vendor.dolby.hardware.dms@2.0",
                 "libdeccfg",
-                "libstagefright_foundation",
+                "libstagefright_foundation-v33",
                 "libutils",
                 "libcutils",
                 "liblog",
@@ -3483,10 +3483,38 @@ cc_prebuilt_library_shared {
                 "libdeccfg",
                 "libstagefright_omx",
                 "libstagefright_softomx",
-                "libstagefright_foundation",
+                "libstagefright_foundation-v33",
                 "libutils",
                 "libcutils",
                 "libmedia_omx",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libstagefrightdolby",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libstagefrightdolby.so",
+            ],
+            shared_libs: [
+                "libstagefright_softomx",
+                "libstagefright_foundation-v33",
+                "libutils",
                 "liblog",
                 "libc++",
                 "libc",
@@ -6276,7 +6304,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libutils",
-                "libstagefright_foundation",
+                "libstagefright_foundation-v33",
                 "liblog",
                 "libxml2",
                 "libcrypto",
