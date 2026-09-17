@@ -120,6 +120,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/wifi/aoa_cldb_falcon.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_falcon.bin \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/wifi/aoa_cldb_swl14.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_swl14.bin \
@@ -190,6 +191,23 @@ PRODUCT_PACKAGES += \
     sound_trigger.primary.kona \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     libFileMux_proprietary \
+    libOmxAacDec \
+    libOmxAacEnc \
+    libOmxAlacDec \
+    libOmxAmrDec \
+    libOmxAmrEnc \
+    libOmxAmrwbplusDec \
+    libOmxApeDec \
+    libOmxDsdDec \
+    libOmxEvrcDec \
+    libOmxEvrcEnc \
+    libOmxG711Dec \
+    libOmxG711Enc \
+    libOmxQcelp13Dec \
+    libOmxQcelp13Enc \
+    libOmxVideoDSMode \
+    libOmxVpp \
+    libOmxWmaDec \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
@@ -202,6 +220,7 @@ PRODUCT_PACKAGES += \
     libcapiv2svacnn \
     libcapiv2svarnn \
     libcapiv2vop \
+    libdsd2pcm \
     libfastcrc \
     libgcs-calwrapper \
     libgcs-ipc \
