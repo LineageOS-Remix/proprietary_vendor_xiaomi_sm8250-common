@@ -13586,6 +13586,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service",
             ],
             shared_libs: [
+                "libstagefright_foundation-v33",
                 "liblog",
                 "libutils",
                 "libhidlbase",
